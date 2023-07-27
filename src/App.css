@@ -1,0 +1,79 @@
+:root{
+  --main-color:rgba(0, 0, 0, 0.753);
+  --cheese-color:rgba(255, 255, 0, 0.789);
+  --bread-color:burlywood;
+  --meat-color:brown;
+  --tomato-color:rgba(208, 25, 61, 0.73);
+}
+*{
+  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--main-color);
+  color: white;
+
+}
+
+
+.container{
+  max-width: 300px;
+  background-color: white;
+  margin: 20px auto;
+  height: 500px;
+  justify-content:center;
+  align-items: center;
+}
+
+.results{
+  background-color: black;
+  height: 20%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.input{
+  display: flex;
+  
+  height: 80%;
+}
+
+.numbers{
+  width: 80%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn{
+  width: 33.3333%;
+}
+
+.operations{
+  width: 20%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.operations button{
+  height: 25%;
+}
+
+.results{
+  position: relative;
+}
+
+.res{
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translateX(-120%) translateY(-120%);
+}
